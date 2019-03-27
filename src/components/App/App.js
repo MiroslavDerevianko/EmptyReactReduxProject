@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
-import "./App.scss";
+import style from "./App.scss";
 
 /* connect need to connect component to redux store */
 
@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   render() {
-    return <div className="title">This is Empty React/Redux App</div>;
+    return <div className={`${style.title}`}>This is Empty React/Redux App</div>;
   }
 }
 
